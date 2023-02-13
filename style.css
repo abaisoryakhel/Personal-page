@@ -1,0 +1,34 @@
+body {
+  font-family: Tahoma;
+}
+#header {
+  background-color: dimgray;
+  height: 5rem;
+  border-bottom: 2.5rem Solid lightseagreen;
+  font-size: 1.5rem;
+  color: white;
+}
+#title {
+  height: 35rem;
+  background-color: lightgray;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+}
+#about {
+  display: flex;
+  height: 19rem;
+}
+h3 {
+  color: lightsteelblue;
+  width: 20rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+#fav {
+  display: flex;
+  justify-content: space-evenly;
+}
