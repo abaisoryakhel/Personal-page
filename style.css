@@ -4,21 +4,24 @@ body {
 #header {
   background-color: dimgray;
   height: 5rem;
-  border-bottom: 2.5rem Solid lightseagreen;
   font-size: 1.5rem;
   color: white;
+}
+#header {
+  border-bottom: 2.5rem Solid lightseagreen;
 }
 #title {
   height: 35rem;
   background-color: lightgray;
   text-align: center;
 }
-
 * {
   margin: 0;
 }
 #about {
   display: flex;
+}
+#about img {
   height: 19rem;
 }
 h3 {
@@ -31,4 +34,8 @@ h3 {
 #fav {
   display: flex;
   justify-content: space-evenly;
+}
+h1 {
+  font-size: 1.5rem;
+  color: white;
 }
