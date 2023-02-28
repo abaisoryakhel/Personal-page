@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: tahoma;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.container > * {
+  flex-basis: 200px;
+  flex-grow: 1;
+  border: 2px solid firebrick;
+}
+
+.image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.box1 .image {
+  background-image: url("https://unsplash.it/300/200?1");
+}
+
+.box2 .image {
+  background-image: url("https://unsplash.it/300/200?2");
+}
+
+.box3 .image {
+  background-image: url("https://unsplash.it/300/200?3");
+}
+
+.box4 .image {
+  background-image: url("https://unsplash.it/500/200?4");
+}
+
+.box5 .image {
+  background-image: url("https://unsplash.it/800/200?5");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+ul > * {
+  background: lightpink;
+  padding: 0.5rem;
+}
+
+.box5 ul > * {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.box3 ul > * {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.box4 ul > * {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.box1 ul > * {
+  display: flex;
+  gap: 0.5rem;
+  justify-items: space-between;
+}
+.box2 ul > * {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+li {
+  background-color: pink;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+button {
+  background: firebrick;
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 1rem;
+}
+
+.box1 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.box1 > .info > * {
+  align-self: flex-start;
+}
+
+.box2 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box2 > .info * {
+  align-self: flex-start;
+}
+
+.box3 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box3 > .info > * {
+  align-self: flex-start;
+}
+
+.box4 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box4 > .info * {
+  align-self: flex-start;
+}
+
+.box5 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box5 > .info * {
+  align-self: flex-start;
+}
