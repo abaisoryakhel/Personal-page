@@ -63,30 +63,24 @@ ul > * {
 
 .box5 ul > * {
   display: flex;
-  gap: 0.5rem;
   justify-content: space-around;
-  align-items: center;
+  flex-grow: 1;
 }
 .box3 ul > * {
   display: flex;
-  gap: 0.5rem;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
 }
 .box4 ul > * {
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  justify-content: center;
 }
 .box1 ul > * {
   display: flex;
-  gap: 0.5rem;
-  justify-items: space-between;
+  justify-items: end;
 }
 .box2 ul > * {
   display: flex;
-  gap: 0.5rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 li {
@@ -111,52 +105,27 @@ button {
 
 .box1 > .info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.box1 > .info > * {
-  align-self: flex-start;
+  align-items: end;
+  justify-content: center;
 }
 
 .box2 > .info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.box2 > .info * {
-  align-self: flex-start;
+  align-items: space-around;
 }
 
 .box3 > .info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-}
-
-.box3 > .info > * {
-  align-self: flex-start;
+  justify-content: end;
 }
 
 .box4 > .info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.box4 > .info * {
-  align-self: flex-start;
+  align-items: space-evenly;
 }
 
 .box5 > .info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.box5 > .info * {
-  align-self: flex-start;
+  align-items: space-between;
 }
