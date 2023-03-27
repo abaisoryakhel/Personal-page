@@ -15,16 +15,23 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 30px 112px 386px 333px 512px 210px 128px 572px;
-  grid-template-columns: 20px 30px 40px 50px;
-  grid-template-areas:
+  grid-template-rows: 25.1px 100px 207px 124px 51px 512px;
+  grid-template-columns: 215px 565px 222px;
+  /* grid-template-areas:
     "one one one one two two two two two"
     "three three three four four four five five five"
     "six six six six six six six six seven"
     "eight eight eight eight eight eight eight eight nine"
     "eight eight eight eight eight eight eight eight nine"
     "six six six six six six six six seven"
-    "ten ten ten ten ten ten ten ten ten";
+    "ten ten ten ten ten ten ten ten ten"; */
+  grid-template-areas:
+    "one one one"
+    "two seven seven"
+    "three four eight"
+    "three four nine"
+    "three five five"
+    "six five five";
 }
 
 .container > * {
