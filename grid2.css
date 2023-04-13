@@ -20,8 +20,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 25.1px 100px 207px 124px 51px 512px;
-  grid-template-columns: 215px 565px 222px;
+  grid-template-rows:
+    minmax(25.1px, auto) minmax(100px, auto) minmax(207px, auto)
+    minmax(124px, auto) minmax(51px, auto) minmax(512px, auto);
+  grid-template-columns: minmax(20px, 215px) minmax(20px, 565px) minmax(
+      20px,
+      222px
+    );
   grid-template-areas:
     "one one one"
     "two seven seven"
@@ -51,7 +56,6 @@ body {
   font-size: 12px;
   font-weight: 700;
   font-family: "Helvetica Neue";
-  padding: 1px;
   width: 100%;
   color: #3d8602;
   justify-content: flex-start;
@@ -87,15 +91,38 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: 700px;
-  display: flex;
-  padding: 4px;
+  padding: 5px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 12px;
 }
 
 .bodypart {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-.bodypart li {
   list-style-type: none;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.box3 ul {
+  padding: 8px;
+  gap: 20px;
+  padding-left: 15px;
+  padding-right: 1px;
+}
+
+/* Media Query for screen width of 500px or less */
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+  }
 }
