@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("https://html.ink.kg/fonts/HelveticaNeueCyr-Roman.ttf");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* img:nth-of-type(1) {
+  display: none;
+} */
+
+body > img:nth-of-type(1) {
+  display: none;
+}
+body {
+  background-image: none;
+  opacity: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    minmax(25.1px, auto) minmax(100px, auto) minmax(207px, auto)
+    minmax(124px, auto) minmax(51px, auto) minmax(512px, auto);
+  grid-template-columns: minmax(20px, 215px) minmax(20px, 565px) minmax(
+      20px,
+      222px
+    );
+  grid-template-areas:
+    "one one one"
+    "two seven seven"
+    "three four eight"
+    "three four nine"
+    "three five five"
+    "six five five";
+}
+
+.container > * {
+  border: 2px dashed blue;
+}
+
+.box1 {
+  grid-area: one;
+}
+
+.box2 {
+  grid-area: two;
+}
+
+.box3 {
+  grid-area: three;
+  display: flex;
+  flex-direction: column;
+  background: #3d8602;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue";
+  width: 100%;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.box4 {
+  grid-area: four;
+  background-image: url("https://www.cnet.com/a/img/resize/d99f708b1e6c7db1ffda00fc1f5d8e35ca7da558/hub/2022/10/05/c29087ff-e885-4668-8cde-8de5a609f716/apple-iphone-14-pro-cnet-promo-11.jpg?auto=webp&fit=crop&height=675&width=1200");
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1cm;
+}
+
+.box5 {
+  grid-area: five;
+}
+
+.box6 {
+  grid-area: six;
+}
+
+.box7 {
+  grid-area: seven;
+}
+
+.box8 {
+  grid-area: eight;
+}
+
+.box9 {
+  grid-area: nine;
+}
+
+.title {
+  display: flex;
+  background: #448511;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700px;
+  padding: 5px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.bodypart {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.box3 ul {
+  padding: 8px;
+  gap: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  text-transform: uppercase;
+}
+.box3 li {
+  border-bottom: 1px solid #fff; /* Added border bottom between list items */
+}
+
+/* Media Query for screen width of 500px or less */
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+  }
+}
+.box2 img {
+  max-width: 200px;
+}
