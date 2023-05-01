@@ -54,12 +54,12 @@ body {
   grid-area: three;
   display: flex;
   flex-direction: column;
-  background: #3d8602;
+  background: #fff;
   font-size: 12px;
   font-weight: 700;
   font-family: "Helvetica Neue";
   width: 100%;
-  color: #fff;
+  color: #3d8602;
   justify-content: flex-start;
 }
 
@@ -101,7 +101,7 @@ body {
   font-size: 12px;
   font-weight: 700px;
   padding: 5px;
-  padding-top: 0px;
+  padding-top: 5px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -122,7 +122,7 @@ body {
   text-transform: uppercase;
 }
 .box3 li {
-  border-bottom: 1px solid #fff; /* Added border bottom between list items */
+  border-bottom: 1px solid #918f8f; /* Added border bottom between list items */
 }
 
 /* Media Query for screen width of 500px or less */
