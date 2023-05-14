@@ -142,6 +142,113 @@ body {
       "nine";
   }
 }
+
 .box2 img {
-  max-width: 200px;
+  max-width: 158px;
+  margin-top: 18px;
+  margin-left: 35px;
+}
+.box5 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+}
+.box5 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0%;
+}
+.box5 ul > * {
+  flex-basis: 180px;
+  text-align: center;
+}
+.product-photo img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.border-image img {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+}
+.origin {
+  color: #565656;
+  font-weight: 400;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.sale {
+  color: #e67b10;
+  font-size: 13px;
+  font-weight: 700;
+}
+.buy-bottom {
+  clear: left;
+  color: #777;
+  font-size: 11px;
+  text-decoration: none;
+}
+.loan {
+  clear: left;
+  color: #777;
+  font-size: 11px;
+  text-decoration: none;
+}
+.model {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #3d8602;
+  background-color: #fff;
+  text-decoration: underline;
+}
+.nd-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #3d8602;
+  background-color: #fff;
+  text-decoration: underline;
+}
+.New-Arrivals {
+  background: #448511;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 12px;
+  padding-right: 700px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.product-photo2 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.product-photo3 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.product-photo4 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
 }

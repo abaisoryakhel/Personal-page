@@ -67,6 +67,12 @@ body {
 
 .box5 {
   grid-area: five;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .box6 {
@@ -111,6 +117,11 @@ body {
   padding-left: 15px;
   padding-right: 1px;
 }
+.box2 img {
+  max-width: 158px;
+  margin-top: 18px;
+  margin-left: 35px;
+}
 
 /* Media Query for screen width of 500px or less */
 @media screen and (max-width: 500px) {
@@ -123,6 +134,112 @@ body {
       "three"
       "four"
       "five"
-      "six";
+      "six"
+      "seven"
+      "eight"
+      "nine";
   }
+}
+.box5 ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.box5 img {
+  padding-top: 10px;
+}
+.box5 ul > * {
+  flex-basis: 190px;
+  text-align: center;
+}
+.product-photo img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  border: 0;
+  height: 100px;
+}
+.border-image img {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+}
+.origin {
+  color: #565656;
+  font-weight: 400;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.sale {
+  color: #e67b10;
+  font-size: 13px;
+  font-weight: 700;
+}
+.buy-bottom {
+  clear: left;
+  color: #777;
+  font-size: 11px;
+  text-decoration: none;
+}
+.loan {
+  clear: left;
+  color: #777;
+  font-size: 11px;
+  text-decoration: none;
+}
+.model {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #3d8602;
+  background-color: #fff;
+  text-decoration: underline;
+}
+.nd-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #3d8602;
+  background-color: #fff;
+  text-decoration: underline;
+}
+.New-Arrivals {
+  background: #448511;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 12px;
+  padding-right: 700px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.product-photo2 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.product-photo3 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.product-photo4 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+}
+.price {
+  color: #e67b10;
+  font-size: 13px;
+  font-weight: 700;
 }
