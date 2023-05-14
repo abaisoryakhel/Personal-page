@@ -150,8 +150,9 @@ body {
   padding-top: 10px;
 }
 .box5 ul > * {
-  flex-basis: 190px;
+  flex-basis: 195px;
   text-align: center;
+  border: 0px solid;
 }
 .product-photo img {
   max-height: 100px;
@@ -233,7 +234,6 @@ body {
 .product-photo4 img {
   max-height: 100px;
   max-width: 175px;
-  padding: 0 !important;
   vertical-align: middle;
   border: 0;
   height: 100px;
