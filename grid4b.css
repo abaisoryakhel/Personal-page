@@ -1,63 +1,353 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 9</title>
-    <link rel="stylesheet" href="grid4.css" class="style" />
-  </head>
-  <body>
-    <button
-      onclick="switchStyle()"
-      style="position: absolute; top: 0; right: 0"
-    >
-      Style
-    </button>
-    <div class="container">
-      <div class="box1"></div>
-      <div class="box2">
-        <img
-          src="https://www.linkpicture.com/q/Screenshot-2023-04-25-at-2.05.45-PM.png"
-          type="image"
-        />
-      </div>
-      <div class="box3">
-        <ul>
-          <li class="title">Goods</li>
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("https://html.ink.kg/fonts/HelveticaNeueCyr-Roman.ttf");
+}
 
-          <ul class="bodypart">
-            <li>Electronics</li>
-            <li>Computers</li>
-            <li>Appliances</li>
-            <li>Beauty and Health</li>
-            <li>Clothes and Accessories</li>
-            <li>Children's Goods</li>
-            <li>Sports and Leisure</li>
-            <li>Auto Products</li>
-            <li>House Garden Renovation</li>
-            <li>Dishes</li>
-            <li>Books</li>
-          </ul>
-        </ul>
-      </div>
-      <div class="box4">Introduction to Iphone 14</div>
-      <div class="box5">5</div>
-      <div class="box6">6</div>
-      <div class="box7">7</div>
-      <div class="box8">8</div>
-      <div class="box9">9</div>
-    </div>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-    <script>
-      function switchStyle() {
-        let style = document.querySelector(".style");
-        if (style.getAttribute("href") == "grid4.css") {
-          style.setAttribute("href", "grid2.css");
-        } else {
-          style.setAttribute("href", "grid4.css");
-        }
-      }
-    </script>
-  </body>
-</html>
+/* img:nth-of-type(1) {
+  display: none;
+} */
+
+body > img:nth-of-type(1) {
+  display: none;
+}
+body {
+  background-image: none;
+  opacity: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    minmax(25.1px, auto) minmax(100px, auto) minmax(207px, auto)
+    minmax(124px, auto) minmax(51px, auto) minmax(512px, auto);
+  grid-template-columns: minmax(20px, 215px) minmax(20px, 565px) minmax(
+      20px,
+      222px
+    );
+  grid-template-areas:
+    "one one one"
+    "two seven seven"
+    "three four eight"
+    "three four nine"
+    "three five five"
+    "six five five";
+}
+
+.container > * {
+  border: 2px dashed blue;
+}
+
+.box1 {
+  grid-area: one;
+}
+
+.box2 {
+  grid-area: two;
+}
+
+.box3 {
+  grid-area: three;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue";
+  width: 100%;
+  color: #3d8602;
+  justify-content: flex-start;
+}
+
+.box4 {
+  grid-area: four;
+  background-image: url("https://www.cnet.com/a/img/resize/d99f708b1e6c7db1ffda00fc1f5d8e35ca7da558/hub/2022/10/05/c29087ff-e885-4668-8cde-8de5a609f716/apple-iphone-14-pro-cnet-promo-11.jpg?auto=webp&fit=crop&height=675&width=1200");
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1cm;
+}
+
+.box5 {
+  grid-area: five;
+}
+
+.box6 {
+  grid-area: six;
+}
+
+.box7 {
+  grid-area: seven;
+}
+
+.box8 {
+  grid-area: eight;
+}
+
+.box9 {
+  grid-area: nine;
+}
+
+.title {
+  display: flex;
+  background: #448511;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700px;
+  padding: 5px;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.bodypart {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.box3 ul {
+  padding: 8px;
+  gap: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  text-transform: uppercase;
+}
+.box3 li {
+  border-bottom: 1px solid #918f8f; /* Added border bottom between list items */
+}
+
+/* Media Query for screen width of 500px or less */
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+  }
+}
+
+.box2 img {
+  max-width: 158px;
+  margin-top: 18px;
+  margin-left: 35px;
+}
+.box5 ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.New-Arrivals {
+  background: #824892;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 12px;
+  padding-right: 700px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "sans-serif";
+  border: 0px solid;
+}
+.box5 ul > * {
+  flex-basis: 195px;
+  text-align: center;
+  border: 0px solid;
+}
+.product-photo img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  border: 0;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px rgba(109, 6, 225, 0.9);
+}
+.border-image img {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+}
+.product-photo2 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px rgba(231, 86, 141, 0.9);
+}
+.product-photo3 img {
+  max-height: 100px;
+  max-width: 175px;
+  padding: 0 !important;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px rgba(15, 9, 11, 0.9);
+}
+.product-photo4 img {
+  max-height: 100px;
+  max-width: 175px;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px rgba(66, 2, 82, 0.9);
+}
+.product-photo6 img {
+  max-height: 100px;
+  max-width: 175px;
+  vertical-align: middle;
+  border: 0;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px rgba(1, 68, 57, 0.9);
+}
+.nd-title,
+.model,
+.origin,
+.sale {
+  font-family: "sans-serif";
+  font-size: 13px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nd-title {
+  color: #824892;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.model {
+  color: #824892;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.origin {
+  color: #565656;
+  text-decoration: line-through;
+  transition: text-decoration 0.3s ease;
+}
+
+.sale {
+  color: #e67b10;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nd-title:hover,
+.model:hover {
+  color: #448511;
+  text-decoration: none;
+}
+
+.origin:hover {
+  text-decoration: line-through underline;
+}
+
+.sale:hover {
+  color: #ff7f00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.buy-bottom {
+  clear: left;
+  color: #448511;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "sans-serif";
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.buy-bottom:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #824892;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.buy-bottom:hover {
+  color: #824892;
+}
+
+.buy-bottom:hover:before {
+  transform: scaleX(1);
+}
+.loan {
+  clear: left;
+  color: #777;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "sans-serif";
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.loan::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #777;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.loan:hover {
+  color: #448511;
+}
+
+.loan:hover::before {
+  transform: scaleX(1);
+}
+.price {
+  color: #e67b10;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "sans-serif";
+}
+.all li {
+  min-height: 270px;
+  position: relative;
+}
+.box5 img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.box5 buy-bottom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
