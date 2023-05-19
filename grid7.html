@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="grid4c.css" class="style" />
   </head>
   <body>
-    <button class="buttonMenu"><img src="https://www.linkpicture.com/q/134216_menu_lines_hamburger_icon.png" alt="humburger"></button>
     <button
       onclick="switchStyle()"
       style="position: absolute; top: 0; right: 0"
     >
+    <button class="buttonMenu"> <img src="https://www.linkpicture.com/q/134216_menu_lines_hamburger_icon.png" alt="humburger"></button>
       Style
     </button>
     <div class="container">
@@ -339,12 +339,12 @@
     </script>
     <script>
       const buttonMenu = document.querySelector('.buttonMenu')
-      const boxTwo = document.querySelector('.humburger')
+      const boxTwo = document.querySelector('.box2')
       buttonMenu.addEventListener('click', ()=> {
-       console.log('yes, hamburger clicked!')
-      buttonMenu.classList.toggle("mobileMenu")
-       boxTwo.classList.toggle("mobileMenu")
+        console.log('yes, hamburger clicked!')
+        buttonMenu.classList.toggle("mobileMenu")
+        boxTwo.classList.toggle("mobileMenu")
       })
-      </script>
+    </script>
   </body>
 </html>

@@ -655,13 +655,25 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .humburger {
+  .box2 {
     display: none;
   }
-  .humburger.mobileMenu {
+  .box2.mobileMenu {
     display: block;
     position: fixed; /* "fixed" elements will always stay in same place even when user scrolls */
-    top: 50px; /* fix the element 0px from top of browser window */
-    right: 0; /* fix the element 0px from right of browser window */
+    top: 0px; /* fix the element 0px from top of browser window */
+    right: 0px; /* fix the element 0px from right of browser window */
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box6 box6"
+      "box5 box5"
+      "box4 box4";
   }
 }

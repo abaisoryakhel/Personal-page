@@ -641,3 +641,26 @@ body {
   padding-right: 0px;
   padding-left: 5px;
 }
+
+.buttonMenu {
+  display: none;
+}
+@media (max-width: 500px) {
+  .buttonMenu {
+    display: block;
+    position: fixed; /* "fixed" elements will always stay in same place even when user scrolls */
+    top: 10px; /* fix the element 0px from top of browser window */
+    right: 0; /* fix the element 0px from right of browser window */
+  }
+}
+@media (max-width: 500px) {
+  .box2 {
+    display: none;
+  }
+  .box2.mobileMenu {
+    display: block;
+    position: fixed; /* "fixed" elements will always stay in same place even when user scrolls */
+    top: 50px; /* fix the element 0px from top of browser window */
+    right: 0; /* fix the element 0px from right of browser window */
+  }
+}
