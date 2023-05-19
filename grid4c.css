@@ -43,9 +43,9 @@ body {
     "six five five";
 }
 
-.container > * {
+/* .container > * {
   border: 2px dashed blue;
-}
+} */
 
 .box1 {
   grid-area: one;
@@ -170,6 +170,7 @@ body {
   padding-top: 5px;
   padding-right: 0px;
   padding-left: 0px;
+  border-radius: 3px;
 }
 .contact-numbers {
   color: #777;
@@ -229,6 +230,7 @@ body {
   padding-top: 5px;
   padding-right: 0px;
   padding-left: 5px;
+  border-radius: 3px;
 }
 
 .title {
@@ -241,6 +243,10 @@ body {
   padding-top: 5px;
   padding-right: 0px;
   padding-left: 0px;
+  border-radius: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .bodypart {
@@ -256,7 +262,7 @@ body {
 }
 
 .box3 ul {
-  padding: 8px;
+  padding: 3px;
   gap: 20px;
   padding-left: 1px;
   padding-right: 1px;
@@ -309,6 +315,7 @@ body {
   padding-bottom: 2px;
   font-family: "sans-serif";
   border: 0px solid;
+  border-radius: 3px;
 }
 .box5 ul > * {
   flex-basis: 195px;
@@ -513,6 +520,7 @@ body {
   justify-content: center;
   margin: 1px;
   width: 209px;
+  border-radius: 3px;
 }
 .box6 .email-input {
   position: relative;
@@ -554,8 +562,10 @@ body {
   font-size: 12px;
   font-weight: 700px;
   padding-top: 5px;
-  width: 185px;
+  width: 80px;
   justify-content: center;
+  border-radius: 10px;
+  margin-left: 40px;
 }
 
 .box6 .subscribe-button button:hover {
@@ -632,7 +642,7 @@ body {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.42857142;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 .Find-Button:hover {
   background-color: #448511;
